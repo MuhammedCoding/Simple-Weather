@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+  
+  <nav id="navbar-scroll" class="navbar navbar-expand-lg bg-light bg-dark navbar-dark">
+    <div class="container p-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./images/logo@2x.png" class="logo me-3" alt="">
+        <div class="logo-caption">
+          <h3 class="h6 mb-0">Weather</h3>
+          <span>tagline goes here</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#liveCameras">Live cameras</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#photos">Photos</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="landing py-5 bg-dark" id="home">
+    <div class="container">
+       <div action="" class="bg-dark rounded-5 px-4 py-2 d-flex justify-content-between"> 
+        <input type="text" name="" id="city" placeholder="Find your location..." class="bg-transparent border-0 text-white w-75">
+        <button class="btn submit btn-info px-4 text-white rounded-5" id="find-btn">Find</button>
+       </div> 
+      <div class="row py-5" id="weatherData">
+      </div>
+    </div>
+  </section>
+    
+  <section class="contact py-5" id="contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div action="" class="bg-dark rounded-5 px-4 py-2 d-flex justify-content-between"> 
+            <input type="email" name="" placeholder="Enter your email to subsctibe..." class="bg-transparent border-0 text-white w-75">
+            <a href="" class="btn btn-info px-4 text-white rounded-5">Subscribe</a>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-1 pt-md-0 pt-4 d-flex justify-content-center align-items-center d-md-block">
+          <div class="social-media d-flex">
+            <div class="icon d-flex justify-content-center align-items-center fs-5 rounded-circle me-2">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="icon d-flex justify-content-center align-items-center fs-5 rounded-circle me-2">
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="icon d-flex justify-content-center align-items-center fs-5 rounded-circle me-2">
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="icon d-flex justify-content-center align-items-center fs-5 rounded-circle me-2">
+              <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5" >
+    <div class="text-center lead text-white-50" >
+      <span>Copyright 2023</span>  
+      <span class="text-info">Mohamed Ahmed</span>
+    </div>
+    <p class=" text-center lead text-white-50">designed by Themezy. All rights reserved</p>
+  </footer>
+
+  <script src="./javascript/bootstrap.bundle.min.js"></script>
+  <script src="./javascript/js.js"></script>
+</body>
+
+</html>

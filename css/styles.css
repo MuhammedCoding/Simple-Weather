@@ -1,0 +1,139 @@
+/*========== Global ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-main-color:#2D303D;
+    --bg-secondary-color : #262936;
+    --btn-primary-color:#0FB2DD
+}
+a,
+a:hover {
+    color: inherit;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+/*==========Start Nav Bar ========== */
+nav .logo {
+    width: 64px;
+    height: 38px;
+}
+
+nav .logo-caption {
+    line-height: 1rem;
+}
+
+nav .logo-caption span {
+    font-size: .75rem;
+}
+
+nav .nav-link.active,
+nav li:hover a 
+{
+    border: var(--btn-primary-color) 1px solid;
+    border-radius: 20px;
+    color : #0FB2DD !important;
+}
+
+nav li a{
+    padding: 0 16px !important;
+}
+/*========== End Nav Bar ========== */
+
+/*========== Start Home  ========== */
+.landing {
+    background-image: url("../images/banner.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-header {
+    background-color: var(--bg-secodary-color) !important;
+}
+.card-body,
+.card-footer {
+    background-color: var(--bg-main-color) !important;
+}
+
+.weather-degree {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.weather-degree img {
+    width: 90px;
+    height: 90px;
+}
+
+.weather-details img {
+    width:25px;
+    height:25px;
+}
+
+.card {
+    min-height: 330px;
+}
+/*==========End Home ========== */
+
+
+/*========== RWD ========== */
+@media (min-width: 575.98px) { 
+    .card {
+        min-height: 330px;
+    }
+}
+
+
+@media (min-width: 767.98px) {
+     .card {
+        min-height: 475px;
+    } 
+}
+
+@media (min-width: 991.98px) { 
+    .card {
+        min-height: 450px;
+    } 
+}
+
+@media (min-width: 1199.98px) { 
+    .card {
+        min-height: 450px;
+    } 
+}
+
+@media (min-width: 1399.98px) { .card {
+        min-height: 330px;
+    } 
+}
+/*========== END RWD ========== */
+
+/*========== Start contact ========== */
+.contact {
+    background-color:var(--bg-secondary-color)
+}
+
+.contact .social-media .icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-main-color);
+    color: var(--btn-primary-color);
+    transition: all 0.5s;
+}
+
+.social-media .icon:hover{
+    background-color: var(--btn-primary-color);
+    color: white !important;
+}
+/*========== End contact ========== */
+
+/*=========== Start Footer ==========*/
+
+footer {
+    background-color: var(--bg-secondary-color);
+}
